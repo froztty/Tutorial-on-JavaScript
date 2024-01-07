@@ -1,14 +1,8 @@
-#countLabel {
-    display: block; /* Set the display property to block, making it a block-level element */
-    text-align: center; /* Center-align text within the element */
-    font-size: 10em; /* Set the font size to 10 times the default size */
-    font-family: Helvetica; /* Use the Helvetica font family */
-}
 
-#btnContainer {
-    text-align: center; /* Center-align text within the container */
+body{
+    font-family: Verdana;
+    text-align: center;
 }
-
 .buttons {
     padding: 10px 20px; /* Set padding of 10 pixels on the top and bottom, and 20 pixels on the left and right */
     font-size: 1.5em; /* Set the font size to 1.5 times the default size */
@@ -17,8 +11,13 @@
     border-radius: 5px; /* Apply a border-radius of 5 pixels for rounded corners */
     cursor: pointer; /* Change the cursor to a pointer on hover, indicating it's clickable */
     transition: background-color 0.25s; /* Apply a smooth transition effect to the background color over 0.25 seconds */
+
 }
 
 .buttons:hover {
     background-color: hsl(214, 100%, 58%); /* Change the background color on hover using HSL values */
+}
+
+.myLabels { /* this is a class with the . */
+    font-size: 1.5em;
 }

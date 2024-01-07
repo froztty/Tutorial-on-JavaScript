@@ -29,15 +29,30 @@ randomNum = Math.floor(Math.random() * 6);
 //so we can have it between 1-100
 //randomNum = Math.floor(Math.random() * 6) + 1;
 
-const min = 50;
-const max = 100;
+//const min = 50;
+//const max = 100;
 
 //the problem with doing this is we are multiplying it by 100 and adding 50
 //we need to have it between 50-100
 //randomNum = Math.floor(Math.random() * max) + min;
-randomNum = Math.floor(Math.random() * (max- min)) + min;
+//randomNum = Math.floor(Math.random() * (max- min)) + min;
 //now we can have it correct
 
 
 
 console.log(randomNum);
+
+
+//Random Number Generator
+const min = 1;
+const max = 6;
+let randomNum1, randomNum2, randomNum3;
+
+document.getElementById("rollBtn").onclick = function(){
+    randomNum1 = Math.floor(Math.random()* max) + min;
+    randomNum2 = Math.floor(Math.random()* max) + min;
+    randomNum3 = Math.floor(Math.random()* max) + min;
+    document.getElementById("label1").textContent = randomNum1;
+    document.getElementById("label2").textContent = randomNum2;
+    document.getElementById("label3").textContent = randomNum3;
+}
