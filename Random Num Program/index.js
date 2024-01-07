@@ -50,6 +50,7 @@ let randomNum1, randomNum2, randomNum3;
 
 document.getElementById("rollBtn").onclick = function(){
     randomNum1 = Math.floor(Math.random()* max) + min;
+    //Math.floor is to round it to whole numbers
     randomNum2 = Math.floor(Math.random()* max) + min;
     randomNum3 = Math.floor(Math.random()* max) + min;
     document.getElementById("label1").textContent = randomNum1;
